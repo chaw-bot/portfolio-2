@@ -34,17 +34,61 @@ code {
     monospace;
 }
 
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
 nav,
-nav ul {
+nav ul,
+.socials {
   display: flex;
 }
 
-nav {
+nav,
+.homemain {
   justify-content: space-between;
-  padding: 20px 30px;
   align-items: center;
 }
 
 nav ul li {
   padding-left: 100px;
 }
+
+nav,
+.homemain {
+  padding: 20px 30px;
+}
+
+.homemain {
+  display: grid;
+  grid-template-columns: 50% 10%;
+}
+
+.socials ul {
+  flex-direction: column;
+}
+
+.socials {
+  justify-self: end;
+}
+
+.socials ul li {
+  padding: 5px 0;
+}
+
+.icon,
+.icon_second {
+  width: 25px;
+  height: 25px;
+}
+
+.icon {
+  color: #fd2d00;
+}
+
+.icon_second {
+  color: #df007c;
+}
+
