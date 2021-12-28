@@ -57,13 +57,24 @@ nav ul li {
 }
 
 nav,
-.homemain {
+.homemain,
+.contactmain {
   padding: 20px 30px;
 }
 
-.homemain {
+.homemain,
+.contactmain {
   display: grid;
+}
+
+.homemain {
   grid-template-columns: 50% 10%;
+}
+
+.contactmain {
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .socials ul {
@@ -92,3 +103,13 @@ nav,
   color: #df007c;
 }
 
+.contactsocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
