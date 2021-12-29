@@ -42,7 +42,8 @@ code {
 
 nav,
 nav ul,
-.socials {
+.socials,
+.skills {
   display: flex;
 }
 
@@ -58,12 +59,14 @@ nav ul li {
 
 nav,
 .homemain,
-.contactmain {
+.contactmain,
+.aboutmain {
   padding: 20px 30px;
 }
 
 .homemain,
-.contactmain {
+.contactmain,
+.aboutmain {
   display: grid;
 }
 
@@ -71,13 +74,15 @@ nav,
   grid-template-columns: 50% 10%;
 }
 
-.contactmain {
+.contactmain,
+.aboutmain {
   grid-template-columns: 40% 40%;
   justify-content: space-between;
   align-content: center;
 }
 
-.socials ul {
+.socials ul,
+.skills {
   flex-direction: column;
 }
 
@@ -113,3 +118,7 @@ nav,
   display: flex;
   flex-direction: column;
 }
+
+/* .language_options {
+  display: none;
+} */
