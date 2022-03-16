@@ -21,9 +21,9 @@ const AboutPage = () => (
       <input type="button" className="resume" value="view my resume" />
     </section>
     <section className="skills">
-      <Languages items={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
-      <Frameworks items={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
-      <Skills items={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
+      <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
+      <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
+      <Skills skills={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
     </section>
   </div>
 );

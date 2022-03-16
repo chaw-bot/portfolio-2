@@ -1,34 +1,46 @@
-import { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { IoMdCloseCircle } from 'react-icons/io';
+import Modal from 'react-bootstrap/Modal';
+import { IoMdClose, IoMdArrowDropdown } from 'react-icons/io';
 
 const Skills = ({
-  items,
+  skills,
 }) => {
-  const [show, setShow] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setShow(!show);
+  const showModal = () => {
+    setIsOpen(true);
+  };
+
+  const hideModal = () => {
+    setIsOpen(false);
   };
 
   return (
-    <div>
-      <input type="button" className="skills" value="Skills" onClick={handleClick} style={{ display: show ? 'none' : 'block' }} />
-      <ul className="skills_options" style={{ display: show ? 'block' : 'none' }}>
-        <h2>Skills</h2>
-        <IoMdCloseCircle onClick={handleClick} />
-        {
-          items.map((item) => (
-            <li key={item}>{item}</li>
-          ))
-        }
-      </ul>
-    </div>
+    <>
+      <button type="button" onClick={showModal}>
+        Skills
+        <IoMdArrowDropdown />
+      </button>
+      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <Modal.Header>
+          <Modal.Title>Skills</Modal.Title>
+          <IoMdClose onClick={hideModal} />
+        </Modal.Header>
+        <Modal.Body>
+          {
+            skills.map((item) => (
+              <li key={item}>{item}</li>
+            ))
+          }
+        </Modal.Body>
+      </Modal>
+    </>
   );
 };
 
 Skills.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Skills;

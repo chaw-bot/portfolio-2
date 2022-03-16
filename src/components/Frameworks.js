@@ -1,34 +1,44 @@
-import { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { IoMdCloseCircle } from 'react-icons/io';
+import Modal from 'react-bootstrap/Modal';
+import { IoMdClose, IoMdArrowDropdown } from 'react-icons/io';
 
-const Frameworks = ({
-  items,
-}) => {
-  const [show, setShow] = useState(false);
+const Frameworks = ({ frameworks }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setShow(!show);
+  const showModal = () => {
+    setIsOpen(true);
+  };
+
+  const hideModal = () => {
+    setIsOpen(false);
   };
 
   return (
-    <div>
-      <input type="button" className="frameworks" value="Frameworks" onClick={handleClick} style={{ display: show ? 'none' : 'block' }} />
-      <ul className="frameworks_options" style={{ display: show ? 'block' : 'none' }}>
-        <h2>Frameworks</h2>
-        <IoMdCloseCircle onClick={handleClick} />
-        {
-          items.map((item) => (
-            <li key={item}>{item}</li>
-          ))
-        }
-      </ul>
-    </div>
+    <>
+      <button type="button" onClick={showModal}>
+        Frameworks
+        <IoMdArrowDropdown />
+      </button>
+      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <Modal.Header>
+          <Modal.Title>Frameworks</Modal.Title>
+          <IoMdClose onClick={hideModal} />
+        </Modal.Header>
+        <Modal.Body>
+          {
+            frameworks.map((item) => (
+              <li key={item}>{item}</li>
+            ))
+          }
+        </Modal.Body>
+      </Modal>
+    </>
   );
 };
 
 Frameworks.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  frameworks: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Frameworks;

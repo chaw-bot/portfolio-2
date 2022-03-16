@@ -1,34 +1,44 @@
-import { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { IoMdCloseCircle } from 'react-icons/io';
+import Modal from 'react-bootstrap/Modal';
+import { IoMdClose, IoMdArrowDropdown } from 'react-icons/io';
 
-const Languages = ({
-  items,
-}) => {
-  const [show, setShow] = useState(false);
+const Languages = ({ languages }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setShow(!show);
+  const showModal = () => {
+    setIsOpen(true);
+  };
+
+  const hideModal = () => {
+    setIsOpen(false);
   };
 
   return (
-    <div>
-      <input type="button" className="languages" value="Languages" onClick={handleClick} style={{ display: show ? 'none' : 'block' }} />
-      <ul className="language_options" style={{ display: show ? 'block' : 'none' }}>
-        <h2>Languages</h2>
-        <IoMdCloseCircle onClick={handleClick} />
-        {
-          items.map((item) => (
-            <li key={item}>{item}</li>
-          ))
-        }
-      </ul>
-    </div>
+    <>
+      <button type="button" onClick={showModal}>
+        Languages
+        <IoMdArrowDropdown />
+      </button>
+      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <Modal.Header>
+          <Modal.Title>Languages</Modal.Title>
+          <IoMdClose onClick={hideModal} />
+        </Modal.Header>
+        <Modal.Body>
+          {
+            languages.map((item) => (
+              <li key={item}>{item}</li>
+            ))
+          }
+        </Modal.Body>
+      </Modal>
+    </>
   );
 };
 
 Languages.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  languages: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Languages;
