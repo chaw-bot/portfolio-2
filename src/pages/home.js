@@ -8,11 +8,11 @@ const HomePage = () => (
   <div className="homemain">
     <section className="intro">
       <header>
-        <h1>Hey there!</h1>
-        <h3>I&apos;m Chawanzi Ng&apos;uni</h3>
-        <h4>Full Stack Developer</h4>
+        <h1 className="font-colour">Hey there!</h1>
+        <h3 className="font-colour">I&apos;m Chawanzi Ng&apos;uni</h3>
+        <h4 className="font-colour">Full Stack Developer</h4>
       </header>
-      <p>
+      <p className="text-light mt-3">
         I can help you build a product,
         feature, or website as well as design
         it. Look through some of my work
@@ -22,7 +22,7 @@ const HomePage = () => (
       </p>
     </section>
     <section className="socials">
-      <ul>
+      <ul className="d-flex justify-content-around">
         <li>
           <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
             <SiLinkedin className="icon" />
