@@ -30,12 +30,14 @@ body {
 
 body,
 #root,
-.homemain {
+.homemain,
+.aboutmain {
   height: 93vh;
 }
 
 .homemain,
-.projectsmain {
+.projectsmain,
+.aboutmain {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -53,6 +55,13 @@ body,
   color: transparent;
 }
 
+.modal-content,
+.projects,
+.mobile-nav {
+  background-image: linear-gradient(45deg, #cc2b5e, #753a88);
+  color: #fff;
+}
+
 code {
   font-family:
     source-code-pro,
@@ -64,8 +73,7 @@ code {
 }
 
 .menu-pop,
-.link-btn,
-.mobile-nav {
+.link-btn {
   background-image: linear-gradient(45deg, #08343f, #0dc3ec);
 }
 
@@ -123,7 +131,7 @@ img {
     display: grid;
     grid-template-rows: 10% 90%;
   }
-  
+
   nav,
   nav ul,
   .socials,
@@ -138,17 +146,17 @@ img {
   .mobile-nav {
     display: none;
   }
-  
+
   nav,
   .homemain {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   nav ul li {
     padding-left: 100px;
   }
-  
+
   nav,
   .homemain,
   .contactmain,
@@ -156,55 +164,54 @@ img {
   .projectsmain {
     padding: 20px 30px;
   }
-  
+
   .homemain,
   .contactmain,
   .aboutmain {
     display: grid;
   }
-  
+
   .homemain {
     grid-template-columns: 50% 10%;
   }
-  
+
   .contactmain,
   .aboutmain {
     grid-template-columns: 40% 40%;
     justify-content: space-between;
     align-content: center;
   }
-  
+
   .projects {
     display: flex;
     align-items: flex-end;
   }
-  
+
   .socials ul,
   .skills {
     flex-direction: column;
   }
-  
+
   .socials {
     justify-self: end;
   }
-  
+
   .socials ul li {
     padding: 5px 0;
   }
-  
+
   .contactsocials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .form {
     display: flex;
     flex-direction: column;
   }
-  
+
   .images {
     width: 50%;
   }
-  
 }

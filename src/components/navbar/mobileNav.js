@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const MobileNav = ({ navLinks }) => (
   <nav className="navbar navbar-light fixed-top mobile-nav">
     <div className="container-fluid">
-      <NavLink className="font-colour h2" exact to="/">Chaw</NavLink>
+      <NavLink className="text-light h2" exact to="/">Chaw</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span className="navbar-toggler-icon" />
       </button>

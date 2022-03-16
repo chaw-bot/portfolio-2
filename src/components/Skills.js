@@ -17,8 +17,8 @@ const Skills = ({
   };
 
   return (
-    <>
-      <button type="button" onClick={showModal}>
+    <div className="mt-3">
+      <button type="button" className="link-btn text-light p-2" onClick={showModal}>
         Skills
         <IoMdArrowDropdown />
       </button>
@@ -35,7 +35,7 @@ const Skills = ({
           }
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 };
 

@@ -15,8 +15,8 @@ const Languages = ({ languages }) => {
   };
 
   return (
-    <>
-      <button type="button" onClick={showModal}>
+    <div className="mt-3">
+      <button type="button" className="link-btn text-light p-2" onClick={showModal}>
         Languages
         <IoMdArrowDropdown />
       </button>
@@ -33,7 +33,7 @@ const Languages = ({ languages }) => {
           }
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 };
 

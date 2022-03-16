@@ -7,23 +7,20 @@ const AboutPage = () => (
   <div className="aboutmain">
     <section className="about">
       <header>
-        <h1>About me</h1>
+        <h1 className="font-colour">About me</h1>
       </header>
-      <p>
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
+      <p className="text-light">
+        Hello I’m a Web developer! I can help you build and design a product ,
+        feature or website Look through some of my work and experience! If
+        you like what you see and have a project you need coded, don’t
+        hestiate to contact me.
       </p>
-      <input type="button" className="resume" value="view my resume" />
-    </section>
-    <section className="skills">
-      <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
-      <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
-      <Skills skills={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
+      <input type="button" className="p-2 link-btn text-light resume" value="view my resume" />
+      <section className="skills d-flex flex-column">
+        <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
+        <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
+        <Skills skills={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
+      </section>
     </section>
   </div>
 );

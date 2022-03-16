@@ -15,12 +15,12 @@ const Frameworks = ({ frameworks }) => {
   };
 
   return (
-    <>
-      <button type="button" onClick={showModal}>
+    <div className="mt-3">
+      <button type="button" className="link-btn text-light p-2" onClick={showModal}>
         Frameworks
         <IoMdArrowDropdown />
       </button>
-      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable p-3">
         <Modal.Header>
           <Modal.Title>Frameworks</Modal.Title>
           <IoMdClose onClick={hideModal} />
@@ -33,7 +33,7 @@ const Frameworks = ({ frameworks }) => {
           }
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 };
 
