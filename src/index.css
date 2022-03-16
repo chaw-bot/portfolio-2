@@ -34,7 +34,8 @@ body,
   height: 93vh;
 }
 
-.homemain {
+.homemain,
+.projectsmain {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -62,7 +63,9 @@ code {
     monospace;
 }
 
-.menu-pop {
+.menu-pop,
+.link-btn,
+.mobile-nav {
   background-image: linear-gradient(45deg, #08343f, #0dc3ec);
 }
 
@@ -87,8 +90,19 @@ code {
   position: relative;
 }
 
-.mobile-nav {
-  background-color: rgb(86, 93, 107);
+.lang {
+  border-bottom: 2px solid;
+  border-top: 1px solid;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.link-btn {
+  border-radius: 25px 0;
+  border: none;
 }
 
 .icon {
