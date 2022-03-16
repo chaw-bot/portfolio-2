@@ -60,7 +60,8 @@ nav ul li {
 nav,
 .homemain,
 .contactmain,
-.aboutmain {
+.aboutmain,
+.projectsmain {
   padding: 20px 30px;
 }
 
@@ -79,6 +80,11 @@ nav,
   grid-template-columns: 40% 40%;
   justify-content: space-between;
   align-content: center;
+}
+
+.projects {
+  display: flex;
+  align-items: flex-end;
 }
 
 .socials ul,
@@ -119,6 +125,6 @@ nav,
   flex-direction: column;
 }
 
-/* .language_options {
-  display: none;
-} */
+.images {
+  width: 50%;
+}

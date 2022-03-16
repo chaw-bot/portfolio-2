@@ -43,6 +43,8 @@
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-syntax-jsx": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
+    "@types/prop-types": "^15.7.4",
+    "@types/react": "^17.0.40",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.25.3",
