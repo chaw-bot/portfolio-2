@@ -4,8 +4,18 @@ import leaderboard from '../images/leaderboard.png';
 import library from '../images/library.png';
 import tipcalculator from '../images/tipcalculator.png';
 import Screenshot1 from '../images/Screenshot1.png';
+import leaseAhome from '../images/lease-a-home.png';
+import everyKwacha from '../images/everyKwacha.png';
 
 const projects = [
+  {
+    name: 'Lease-a-home',
+    description: 'This is an apartment webapp that allows a user to sign up, log in, and make leases on particular apartments.',
+    live_demo: 'https://lease-a-home.herokuapp.com/',
+    source_code: 'https://github.com/HENRYKC24/lease-a-home-frontend',
+    image: leaseAhome,
+    languages: ['ReactJS', 'Redux', 'CSS', 'BootStrap'],
+  },
   {
     name: 'Tip Calculator',
     description: 'A bill calculator that takes in the total bill and tip percentage and divides the bill equally amongst the available people.',
@@ -53,6 +63,14 @@ const projects = [
     source_code: 'https://github.com/wuyepabdul/space-travelers-hub',
     image: Screenshot1,
     languages: ['ReactJS', 'CSS'],
+  },
+  {
+    name: 'EveryKwacha',
+    description: 'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    live_demo: 'https://every-kwacha.herokuapp.com/',
+    source_code: 'https://github.com/chaw-bot/every-kwacha',
+    image: everyKwacha,
+    languages: ['Ruby', 'RoR', 'CSS', 'BootStrap'],
   },
 ];
 
