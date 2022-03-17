@@ -7,14 +7,14 @@ const ContactPage = () => (
   <div className="contactmain">
     <section className="outro">
       <header>
-        <h1>Hey again!</h1>
+        <h1 className="font-colour">Hey again!</h1>
       </header>
-      <p>
+      <p className="text-light">
         I&apos;m always interested in hearing
         about new projects. If you would
         like to chat please get in touch.
       </p>
-      <ul className="contactsocials">
+      <ul className="d-flex justify-content-around contactsocials">
         <li>
           <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
             <SiLinkedin className="icon" />
@@ -38,11 +38,12 @@ const ContactPage = () => (
       </ul>
     </section>
     <section>
-      <form action="wait a minute" className="form">
-        <input type="text" className="name" placeholder="Full name" />
-        <input type="email" className="email" placeholder="Email" />
-        <input type="text" className="msg" placeholder="Leave a message..." />
-        <input type="submit" value="Get in touch" />
+      <h5 className="font-colour">You could leave me a message☺</h5>
+      <form action="https://formspree.io/f/xlezlwgk" method="post" className="d-flex flex-column">
+        <input name="text" className="form-input text-light mt-3" placeholder="Full name" required />
+        <input name="email" className="form-input text-light mt-3" placeholder="Email" required />
+        <textarea name="text" className="form-input text-light mt-3" placeholder="Leave a message..." />
+        <input type="submit" className="link-btn p-2 text-light mt-3" value="Get in touch" />
       </form>
     </section>
   </div>

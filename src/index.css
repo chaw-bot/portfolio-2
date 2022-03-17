@@ -31,13 +31,15 @@ body {
 body,
 #root,
 .homemain,
-.aboutmain {
+.aboutmain,
+.contactmain {
   height: 93vh;
 }
 
 .homemain,
 .projectsmain,
-.aboutmain {
+.aboutmain,
+.contactmain {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -123,6 +125,12 @@ img {
 
 .desk-nav {
   display: none;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid #df007c;
+  background-color: transparent;
 }
 
 @media only screen and (min-width: 768px) {

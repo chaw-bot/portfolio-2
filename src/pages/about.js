@@ -15,7 +15,9 @@ const AboutPage = () => (
         you like what you see and have a project you need coded, don’t
         hestiate to contact me.
       </p>
-      <input type="button" className="p-2 link-btn text-light resume" value="view my resume" />
+      <a href="https://docs.google.com/document/d/1l4HHhjHjOCPIOxeI3rggq43b-GInXkReneOMgc1fEgU/edit?usp=sharing" target="_blank" rel="noreferrer">
+        <input type="button" className="p-2 link-btn text-light resume" value="view my resume" />
+      </a>
       <section className="skills d-flex flex-column">
         <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
         <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
