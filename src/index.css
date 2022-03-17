@@ -1,13 +1,248 @@
+*,
+.menu-list,
+.offcanvas-body,
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+#root,
+.homemain,
+.aboutmain,
+.contactmain {
+  height: 93vh;
+}
+
+.homemain,
+.projectsmain,
+.aboutmain,
+.contactmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10%;
+  background-image: url("/src/images/mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.font-colour {
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.modal-content,
+.projects,
+.mobile-nav,
+.desk-nav {
+  background-image: linear-gradient(45deg, #cc2b5e, #753a88);
+  color: #fff;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.menu-pop,
+.link-btn {
+  background-image: linear-gradient(45deg, #08343f, #0dc3ec);
+}
+
+.offcanvas-body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 32px;
+}
+
+.icon,
+.icon_second {
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  color: #fd2d00;
+}
+
+.icon_second {
+  color: #df007c;
+}
+
+.icon:hover,
+.icon_second:hover {
+  color: aquamarine;
+}
+
+.mobile-nav {
+  position: relative;
+}
+
+.lang {
+  border-bottom: 2px solid;
+  border-top: 1px solid;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.link-btn {
+  border-radius: 25px 0;
+  border: none;
+}
+
+.desk-nav {
+  display: none;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid #df007c;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desk-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 30px;
+  }
+
+  nav ul li {
+    padding-left: 100px;
+  }
+
+  nav ul,
+  .desk-nav,
+  .socials,
+  .skills,
+  .projects {
+    display: flex;
+  }
+
+  .active,
+  .navLinks li a:hover {
+    border: none;
+    border-bottom: 3px solid rgb(81, 197, 81);
+  }
+
+  .homemain,
+  .aboutmain {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .intro,
+  .about,
+  .outro {
+    width: 45%;
+  }
+
+  .intro header h1,
+  .about header h1,
+  .outro header h1 {
+    font-size: 5rem;
+  }
+
+  .intro header h3 {
+    font-size: 3rem;
+  }
+
+  .intro header h4 {
+    font-size: 2rem;
+  }
+
+  .intro p,
+  .about,
+  .outro p,
+  .outro h5 {
+    font-size: 1.5rem;
+  }
+
+  .socials {
+    height: 90%;
+  }
+
+  .icon,
+  .icon_second {
+    width: 50px;
+    height: 50px;
+  }
+
+  .socials ul {
+    flex-direction: column;
+  }
+
+  .link-btn {
+    padding: 1rem !important;
+  }
+
+  .link-btn:hover {
+    background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
+  }
+
+  .projects-cont {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3%;
+    row-gap: 3%;
+    justify-content: center;
+  }
+
+  .projects {
+    width: 20%;
+  }
+
+  .homemain,
+  .projectsmain,
+  .aboutmain,
+  .contactmain {
+    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
