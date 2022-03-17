@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 const ProjectsPage = ({ projects }) => (
   <div className="projectsmain p-3">
     <header>
-      <h3 className="font-colour">
+      <h3 className="font-colour p-3 mt-3">
         Here are some of the projects I&apos;ve created and collaborated on..
       </h3>
     </header>
-    <section className="">
+    <section className="projects-cont">
       {
           projects.map((project) => (
             <div key={project.name} className="card mt-3 p-3 projects">

@@ -10,7 +10,7 @@ const DesktopNav = ({ navLinks }) => (
     <ul>
       {navLinks.map((links) => (
         <li key={links.id} className={links.name}>
-          <NavLink exact to={links.path} activeClassName="active-link">
+          <NavLink exact to={links.path} activeClassName="active-link" className="text-light h5">
             {links.text}
           </NavLink>
         </li>

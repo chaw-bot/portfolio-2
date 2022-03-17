@@ -14,7 +14,7 @@ const ContactPage = () => (
         about new projects. If you would
         like to chat please get in touch.
       </p>
-      <ul className="d-flex justify-content-around contactsocials">
+      <ul className="d-flex justify-content-around contactsocials mt-3">
         <li>
           <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
             <SiLinkedin className="icon" />
@@ -36,9 +36,7 @@ const ContactPage = () => (
           </a>
         </li>
       </ul>
-    </section>
-    <section>
-      <h5 className="font-colour">You could leave me a message☺</h5>
+      <h5 className="font-colour mt-5">You could leave me a message☺</h5>
       <form action="https://formspree.io/f/xlezlwgk" method="post" className="d-flex flex-column">
         <input name="text" className="form-input text-light mt-3" placeholder="Full name" required />
         <input name="email" className="form-input text-light mt-3" placeholder="Email" required />

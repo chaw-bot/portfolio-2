@@ -18,11 +18,11 @@ const AboutPage = () => (
       <a href="https://docs.google.com/document/d/1l4HHhjHjOCPIOxeI3rggq43b-GInXkReneOMgc1fEgU/edit?usp=sharing" target="_blank" rel="noreferrer">
         <input type="button" className="p-2 link-btn text-light resume" value="view my resume" />
       </a>
-      <section className="skills d-flex flex-column">
-        <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
-        <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
-        <Skills skills={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
-      </section>
+    </section>
+    <section className="skills d-flex flex-column">
+      <Languages languages={['JavaScript', 'Ruby', 'HTML', 'CSS']} />
+      <Frameworks frameworks={['BootStrap', 'ReactJS', 'Ruby on Rails', 'RSpec']} />
+      <Skills skills={['GitHub', 'AdobeXD', 'Terminal', 'Team Work', 'Pair Progamming']} />
     </section>
   </div>
 );
