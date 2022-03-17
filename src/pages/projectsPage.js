@@ -20,7 +20,7 @@ const ProjectsPage = ({ projects }) => (
                 <ul className="d-flex justify-content-evenly mt-3 lang">
                   {
                     project.languages.map((language) => (
-                      <li key={language} className="p-2">{language}</li>
+                      <li key={language} className="p-2 h6">{language}</li>
                     ))
                   }
                 </ul>
