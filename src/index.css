@@ -53,7 +53,7 @@ body,
 .font-colour {
   font-weight: bold;
   background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -97,6 +97,14 @@ code {
   height: 30px;
 }
 
+.icon {
+  color: #fd2d00;
+}
+
+.icon_second {
+  color: #df007c;
+}
+
 .icon:hover,
 .icon_second:hover {
   color: aquamarine;
@@ -119,14 +127,6 @@ img {
 .link-btn {
   border-radius: 25px 0;
   border: none;
-}
-
-.icon {
-  color: #fd2d00;
-}
-
-.icon_second {
-  color: #df007c;
 }
 
 .desk-nav {
@@ -188,11 +188,11 @@ img {
   }
 
   .intro header h3 {
-    font-size: 3rem
+    font-size: 3rem;
   }
 
   .intro header h4 {
-    font-size: 2rem
+    font-size: 2rem;
   }
 
   .intro p,
