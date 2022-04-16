@@ -8,6 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 body {
@@ -33,7 +34,7 @@ body,
 .homemain,
 .aboutmain,
 .contactmain {
-  height: 93vh;
+  height: 100vh;
 }
 
 .homemain,
@@ -42,7 +43,7 @@ body,
 .contactmain {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 10%;
   background-image: url("/src/images/mobile.jpg");
   background-repeat: no-repeat;
@@ -180,7 +181,7 @@ img {
   .intro,
   .about,
   .outro {
-    width: 45%;
+    width: 60%;
   }
 
   .intro header h1,
