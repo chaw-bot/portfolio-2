@@ -4,7 +4,7 @@ import Frameworks from '../components/Frameworks';
 import Skills from '../components/Skills';
 
 const AboutPage = () => (
-  <div className="aboutmain">
+  <div className="aboutmain" id="aboutPage">
     <section className="about">
       <header>
         <h1 className="font-colour">About me</h1>
