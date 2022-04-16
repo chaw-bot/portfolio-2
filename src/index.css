@@ -105,13 +105,13 @@ code {
   color: #df007c;
 }
 
+.card {
+  position: static;
+}
+
 .icon:hover,
 .icon_second:hover {
   color: aquamarine;
-}
-
-.mobile-nav {
-  position: relative;
 }
 
 .lang {
@@ -145,6 +145,8 @@ img {
   }
 
   .desk-nav {
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 3px 30px;
