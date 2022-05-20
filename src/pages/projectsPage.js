@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ProjectsPage = ({ projects }) => (
-  <div className="projectsmain p-3">
+  <div className="projectsmain p-3" id="projectsPage">
     <header>
       <h3 className="font-colour p-3 mt-3">
         Here are some of the projects I&apos;ve created and collaborated on..

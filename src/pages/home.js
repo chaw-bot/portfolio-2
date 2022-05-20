@@ -5,7 +5,7 @@ import { AiFillMediumCircle } from 'react-icons/ai';
 import { IoMdMail } from 'react-icons/io';
 
 const HomePage = () => (
-  <div className="homemain">
+  <div className="homemain" id="homePage">
     <section className="intro">
       <header>
         <h1 className="font-colour">Hey there!</h1>
