@@ -6,8 +6,26 @@ import tipcalculator from '../images/tipcalculator.png';
 import Screenshot1 from '../images/Screenshot1.png';
 import leaseAhome from '../images/lease-a-home.png';
 import everyKwacha from '../images/everyKwacha.png';
+import adviceGenerator from '../images/advice-generator.png';
+import interactiveRating from '../images/interactiveRating.png';
 
 const projects = [
+  {
+    name: 'Adivce Generator',
+    description: 'This is an app that generates random advice and quotes from an API.',
+    live_demo: 'https://chaw-bot.github.io/advice-generator/',
+    source_code: 'https://github.com/chaw-bot/advice-generator/tree/development',
+    image: adviceGenerator,
+    languages: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'Interactive Rating Component',
+    description: 'This is a nice, small project to practice handling user interactions and updating the DOM.',
+    live_demo: 'https://chaw-bot.github.io/interactive-rating-component/',
+    source_code: 'https://github.com/chaw-bot/interactive-rating-component/tree/development',
+    image: interactiveRating,
+    languages: ['HTML', 'CSS', 'JavaScript'],
+  },
   {
     name: 'Lease-a-home',
     description: 'This is an apartment webapp that allows a user to sign up, log in, and make leases on particular apartments.',
