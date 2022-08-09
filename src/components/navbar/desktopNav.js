@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const DesktopNav = ({ navLinks }) => (
   <nav className="desk-nav">
     <header>
-      <Link className="text-light h2" to="homePage">Chaw</Link>
+      <NavLink className="text-light h2" to="/">Chaw</NavLink>
     </header>
     <ul>
       {navLinks.map((links) => (
         <li key={links.id} className={links.name}>
-          <Link to={links.path} smooth duration={500} activeclassname="active" className="text-light h5">
+          <NavLink to={links.path} smooth duration={500} activeclassname="active" className="text-light h5">
             {links.text}
-          </Link>
+          </NavLink>
         </li>
       ))}
     </ul>

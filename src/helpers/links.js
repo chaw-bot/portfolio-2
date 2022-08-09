@@ -1,25 +1,25 @@
 const navLinks = [
   {
     id: 1,
-    path: 'homePage',
+    path: '/',
     text: 'home',
     pageName: 'homePage',
   },
   {
     id: 2,
-    path: 'projectsPage',
+    path: '/projectsPage',
     text: 'projects',
     pageName: 'projectsPage',
   },
   {
     id: 3,
-    path: 'aboutPage',
+    path: '/aboutPage',
     text: 'about',
     pageName: 'aboutPage',
   },
   {
     id: 4,
-    path: 'contactPage',
+    path: '/contactPage',
     text: 'contact',
     pageName: 'contactPage',
   },

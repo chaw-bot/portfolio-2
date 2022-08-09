@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const MobileNav = ({ navLinks }) => (
   <nav className="navbar navbar-light fixed-top mobile-nav">
     <div className="container-fluid">
-      <Link className="text-light h2" to="homePage">Chaw</Link>
+      <NavLink className="text-light h2" to="/">Chaw</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span className="navbar-toggler-icon" />
       </button>
@@ -17,9 +17,9 @@ const MobileNav = ({ navLinks }) => (
           <ul className="menu-list">
             {navLinks.map((links) => (
               <li key={links.id} className={links.name} data-bs-dismiss="offcanvas">
-                <Link to={links.path} smooth duration={500} activeclassname="active-link" className="menu-link">
+                <NavLink to={links.path} smooth duration={500} activeclassname="active-link" className="menu-link">
                   {links.text}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
