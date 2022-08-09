@@ -44,7 +44,7 @@ const HomePage = () => (
           </a>
         </li>
         <li>
-          <a href="add link to contact page">
+          <a href="mailto:nwanzi5@gmail.com" target="_blank" rel="noreferrer">
             <IoMdMail className="icon" />
           </a>
         </li>
