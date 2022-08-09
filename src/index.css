@@ -10,6 +10,10 @@ ul {
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family:
@@ -33,7 +37,7 @@ body,
 .homemain,
 .aboutmain,
 .contactmain {
-  height: 93vh;
+  height: 100vh;
 }
 
 .homemain,
@@ -42,7 +46,7 @@ body,
 .contactmain {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 10%;
   background-image: url("/src/images/mobile.jpg");
   background-repeat: no-repeat;
@@ -105,13 +109,13 @@ code {
   color: #df007c;
 }
 
+.card {
+  position: static;
+}
+
 .icon:hover,
 .icon_second:hover {
   color: aquamarine;
-}
-
-.mobile-nav {
-  position: relative;
 }
 
 .lang {
@@ -131,6 +135,7 @@ img {
 
 .desk-nav {
   display: none;
+  height: 10vh;
 }
 
 .form-input {
@@ -139,12 +144,14 @@ img {
   background-color: transparent;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .mobile-nav {
     display: none;
   }
 
   .desk-nav {
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 3px 30px;
@@ -178,7 +185,7 @@ img {
   .intro,
   .about,
   .outro {
-    width: 45%;
+    width: 60%;
   }
 
   .intro header h1,
@@ -240,9 +247,19 @@ img {
   .projectsmain,
   .aboutmain,
   .contactmain {
-    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .homemain {
+    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
+  }
+
+
+  .projectsmain,
+  .aboutmain,
+  .contactmain {
+    background-image: url("/src/images/spacewallpaper.jpg");
   }
 }

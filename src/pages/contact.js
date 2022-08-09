@@ -4,7 +4,7 @@ import { FaTwitterSquare } from 'react-icons/fa';
 import { AiFillMediumCircle } from 'react-icons/ai';
 
 const ContactPage = () => (
-  <div className="contactmain">
+  <div className="contactmain" id="contactPage">
     <section className="outro">
       <header>
         <h1 className="font-colour">Hey again!</h1>

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const MobileNav = ({ navLinks }) => (
   <nav className="navbar navbar-light fixed-top mobile-nav">
     <div className="container-fluid">
-      <NavLink className="text-light h2" exact to="/">Chaw</NavLink>
+      <NavLink className="text-light h2" to="/">Chaw</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span className="navbar-toggler-icon" />
       </button>
@@ -17,7 +17,7 @@ const MobileNav = ({ navLinks }) => (
           <ul className="menu-list">
             {navLinks.map((links) => (
               <li key={links.id} className={links.name} data-bs-dismiss="offcanvas">
-                <NavLink exact to={links.path} activeClassName="active-link" className="menu-link">
+                <NavLink to={links.path} smooth duration={500} activeclassname="active-link" className="menu-link">
                   {links.text}
                 </NavLink>
               </li>

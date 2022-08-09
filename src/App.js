@@ -8,15 +8,20 @@ import ProjectsPage from './pages/projectsPage';
 import projects from './helpers/projectList';
 
 const App = () => (
-  <Router>
-    <NavBar />
-    <Routes>
-      <Route exact path="/" element={<HomePage />} />
-      <Route path="/projectsPage" element={<ProjectsPage projects={projects} />} />
-      <Route path="/aboutPage" element={<AboutPage />} />
-      <Route path="/contactPage" element={<ContactPage />} />
-    </Routes>
-  </Router>
+  <div className="App">
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route
+          path="/projectsPage"
+          element={<ProjectsPage projects={projects} />}
+        />
+        <Route path="/aboutPage" element={<AboutPage />} />
+        <Route path="/contactPage" element={<ContactPage />} />
+      </Routes>
+    </Router>
+  </div>
 );
 
 export default App;

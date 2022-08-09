@@ -5,7 +5,7 @@ import { AiFillMediumCircle } from 'react-icons/ai';
 import { IoMdMail } from 'react-icons/io';
 
 const HomePage = () => (
-  <div className="homemain">
+  <div className="homemain" id="homePage">
     <section className="intro">
       <header>
         <h1 className="font-colour">Hey there!</h1>
@@ -44,7 +44,7 @@ const HomePage = () => (
           </a>
         </li>
         <li>
-          <a href="add link to contact page">
+          <a href="mailto:nwanzi5@gmail.com" target="_blank" rel="noreferrer">
             <IoMdMail className="icon" />
           </a>
         </li>
