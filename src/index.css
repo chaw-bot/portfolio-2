@@ -8,6 +8,9 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
   cursor: pointer;
 }
 
@@ -132,6 +135,7 @@ img {
 
 .desk-nav {
   display: none;
+  height: 10vh;
 }
 
 .form-input {
@@ -140,7 +144,7 @@ img {
   background-color: transparent;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .mobile-nav {
     display: none;
   }
@@ -243,9 +247,19 @@ img {
   .projectsmain,
   .aboutmain,
   .contactmain {
-    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .homemain {
+    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
+  }
+
+  
+  .projectsmain,
+  .aboutmain,
+  .contactmain {
+    background-image: url("/src/images/spacewallpaper.jpg");
   }
 }
