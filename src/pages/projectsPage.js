@@ -15,8 +15,6 @@ const ProjectsPage = ({ projects }) => (
               <div>
                 <h5 className="">{project.name}</h5>
                 <img src={project.image} alt={project.name} className="images" />
-              </div>
-              <div>
                 <ul className="d-flex justify-content-evenly mt-3 lang">
                   {
                     project.languages.map((language) => (
@@ -25,11 +23,13 @@ const ProjectsPage = ({ projects }) => (
                   }
                 </ul>
                 <p className="mt-3">{project.description}</p>
+              </div>
+              <div>
                 <div className="d-flex justify-content-evenly">
-                  <a href={project.live_demo}>
+                  <a href={project.live_demo} target="_blank" rel="noreferrer">
                     <input type="submit" value="Live Demo" className="p-2 link-btn text-light" />
                   </a>
-                  <a href={project.source_code}>
+                  <a href={project.source_code} target="_blank" rel="noreferrer">
                     <input type="submit" value="Source Code" className="p-2 link-btn text-light" />
                   </a>
                 </div>

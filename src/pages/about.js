@@ -15,9 +15,11 @@ const AboutPage = () => (
         enjoy turning design templates into functional code that people can use smoothly
         whilst enjoying the experience. I am fluent in multiple programming
         languages, frameworks,and technologies and capable of ramping up
-        quickly and efficiently. I am a fast learner and I enjoy learning new
+        quickly and efficiently.
+
+        {/* I am a fast learner and I enjoy learning new
         things. I enjoy pair programming and remote work. If you like what you
-        see and have a project you need coded, don’t hesitate to contact me.
+        see and have a project you need coded, don’t hesitate to contact me. */}
       </p>
 
       <a href={Resume} className="p-2 link-btn text-light resume" download>view my resume</a>
