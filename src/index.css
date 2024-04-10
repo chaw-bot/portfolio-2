@@ -16,18 +16,7 @@ a {
 
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,10 +37,15 @@ body,
   flex-direction: column;
   justify-content: center;
   padding: 10%;
-  background-image: url("/src/images/mobile.jpg");
+  /* background-image: url("/src/images/mobile.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
 }
 
 .font-colour {
@@ -59,6 +53,10 @@ body,
   background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.nav-link {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .about p {
@@ -70,7 +68,8 @@ body,
 .projects,
 .mobile-nav,
 .desk-nav {
-  background-image: linear-gradient(45deg, #cc2b5e, #753a88);
+  /* background-image: linear-gradient(45deg, #cc2b5e, #753a88); */
+  background-color: #FFC0CB;
   color: #fff;
 }
 
@@ -252,7 +251,7 @@ img {
     width: 20%;
   }
 
-  .homemain,
+  /* .homemain, */
   .projectsmain,
   .aboutmain,
   .contactmain {
@@ -262,12 +261,14 @@ img {
   }
 
   .homemain {
-    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
+    /* background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg"); */
+    background-color: #fedfe4;
   }
 
   .projectsmain,
   .aboutmain,
   .contactmain {
-    background-image: url("/src/images/black.jpg");
+    /* background-image: url("/src/images/black.jpg"); */
+    background-color: #fedfe4;
   }
 }
