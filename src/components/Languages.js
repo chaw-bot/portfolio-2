@@ -1,38 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-bootstrap/Modal';
-import { IoMdClose, IoMdArrowDropdown } from 'react-icons/io';
+import { IoMdArrowDropup, IoMdArrowDropdown } from 'react-icons/io';
 
 const Languages = ({ languages }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const showModal = () => {
-    setIsOpen(true);
-  };
-
-  const hideModal = () => {
-    setIsOpen(false);
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <div className="mt-3">
-      <button type="button" className="link-btn text-light p-2" onClick={showModal}>
+      <button type="button" className="link-btn text-light p-2" onClick={toggleDropdown}>
         Languages
-        <IoMdArrowDropdown />
+        {' '}
+        {isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
       </button>
-      <Modal show={isOpen} onHide={hideModal} dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <Modal.Header>
-          <Modal.Title>Languages</Modal.Title>
-          <IoMdClose onClick={hideModal} />
-        </Modal.Header>
-        <Modal.Body>
-          {
-            languages.map((item) => (
-              <li key={item}>{item}</li>
-            ))
-          }
-        </Modal.Body>
-      </Modal>
+      {isOpen && (
+        <ul className="dropdown-menu show">
+          {languages.map((item) => (
+            <li key={item} className="dropdown-item">{item}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

@@ -8,17 +8,15 @@ const HomePage = () => (
   <div className="homemain" id="homePage">
     <section className="intro">
       <header>
-        <h1 className="font-colour">Hey there!</h1>
-        <h3 className="font-colour">I&apos;m Chawanzi Ng&apos;uni</h3>
-        <h4 className="font-colour">Full Stack Developer</h4>
+        {/* <h1 className="font-colour">Hey there!</h1> */}
+        <h3 className="font-colour">Chawanzi Ng&apos;uni</h3>
+        <br />
+        <h4 className="font-colour">Front-End Developer</h4>
+        <h4 className="font-colour">Building beautiful & user-friendly experiences.</h4>
       </header>
-      <p className="text-light mt-3">
-        I can help you build a product,
-        feature, or website as well as design
-        it. Look through some of my work
-        and experience. If you like what you
-        see and have a project you need
-        coded, do not hesitate to contact me.
+      <p className="text-light">
+        I design and code user-friendly products, features, and websites.
+        Explore my work and experience - if you have a project in mind, let&apos;s chat!
       </p>
     </section>
     <section className="socials">
