@@ -16,18 +16,7 @@ a {
 
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,9 +24,12 @@ body {
 body,
 #root,
 .homemain,
-.aboutmain,
 .contactmain {
   height: 100vh;
+}
+
+.aboutmain {
+  height: 150vh;
 }
 
 .homemain,
@@ -47,31 +39,49 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 10%;
-  background-image: url("/src/images/mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.font-colour {
-  font-weight: bold;
-  background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
-  -webkit-background-clip: text;
-  color: transparent;
+.logo {
+  height: 50px;
+  margin-right: 10px;
 }
 
-.about p {
+.font-colour {
+  color: #e8871e;
+}
+
+.nav-link {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #393939;
+}
+
+.nav-link:hover {
+  background-color: #bad4aa;
+  border-radius: 5px;
+}
+
+.about p,
+.outrop {
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.outrop {
+  font-size: 20px;
 }
 
 .modal-content,
 .projects,
 .mobile-nav,
 .desk-nav {
-  background-image: linear-gradient(45deg, #cc2b5e, #753a88);
-  color: #fff;
+  background-color: #FFD1DC;
 }
 
 .projects {
@@ -89,8 +99,13 @@ code {
 }
 
 .menu-pop,
-.link-btn {
-  background-image: linear-gradient(45deg, #08343f, #0dc3ec);
+.link-btn,
+.link-btn-2 {
+  width: 80%;
+}
+
+.call-to-action {
+  color: #edb458;
 }
 
 .offcanvas-body {
@@ -100,31 +115,41 @@ code {
 }
 
 .menu-link {
-  color: #fff;
   font-size: 32px;
 }
 
 .icon,
-.icon_second {
-  width: 30px;
-  height: 30px;
+.icon_second,
+.icon_third,
+.icon_fourth,
+.icon_fifth {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
 .icon {
-  color: #fd2d00;
+  color: #ebf5df;
 }
 
 .icon_second {
-  color: #df007c;
+  color: #e8871e;
+}
+
+.icon_third {
+  color: #bad4aa;
+}
+
+.icon_fourth {
+  color: #edb458;
+}
+
+.icon_fifth {
+  color: #d4d4aa;
 }
 
 .card {
   position: static;
-}
-
-.icon:hover,
-.icon_second:hover {
-  color: aquamarine;
 }
 
 .lang {
@@ -137,8 +162,9 @@ img {
   border-radius: 10px;
 }
 
-.link-btn {
-  border-radius: 10px 0;
+.link-btn,
+.link-btn-2 {
+  border-radius: 5px;
   border: none;
 }
 
@@ -149,14 +175,86 @@ img {
 
 .form-input {
   border: none;
-  border-bottom: 2px solid #df007c;
   background-color: transparent;
+  border-bottom: 1px solid #737272;
 }
+
+.dropdown-menu {
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: block;
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-item {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.images {
+  max-width: 100%;
+  height: auto;
+}
+
+.link-btn {
+  background-color: #edb458;
+}
+
+.link-btn-2 {
+  background-color: #ebf5df;
+}
+
+.arrows {
+      height: 50px;
+      width: 50px;
+        border-radius: 100%;
+}
+
+.homemain {
+  background-color: #FFD1DC;
+}
+
+.aboutmain {
+  background-color: #FFD1DC;
+}
+
+.projectsmain,
+.aboutmain,
+.contactmain {}
 
 @media only screen and (min-width: 800px) {
   .mobile-nav {
     display: none;
   }
+
+    .aboutmain {
+      height: 70vh;
+    }
 
   .desk-nav {
     position: fixed;
@@ -172,7 +270,6 @@ img {
 
   nav ul,
   .desk-nav,
-  .socials,
   .skills,
   .projects {
     display: flex;
@@ -181,7 +278,7 @@ img {
   .active,
   .navLinks li a:hover {
     border: none;
-    border-bottom: 3px solid rgb(81, 197, 81);
+    border-bottom: 3px solid #FFF9DB;
   }
 
   .homemain,
@@ -205,6 +302,7 @@ img {
 
   .intro header h3 {
     font-size: 3rem;
+    color: #393939;
   }
 
   .intro header h4 {
@@ -216,19 +314,11 @@ img {
   .outro p,
   .outro h5 {
     font-size: 1.5rem;
-  }
-
-  .socials {
-    height: 90%;
-  }
-
-  .icon,
-  .icon_second {
-    width: 50px;
-    height: 50px;
+    color: #393939;
   }
 
   .socials ul {
+    height: 90%;
     flex-direction: column;
   }
 
@@ -236,15 +326,12 @@ img {
     padding: 0.5rem !important;
   }
 
-  .link-btn:hover {
-    background-image: linear-gradient(45deg, #cc2b5e, #fd2d00);
-  }
-
   .projects-cont {
     display: flex;
     flex-wrap: wrap;
     column-gap: 3%;
     row-gap: 3%;
+    align-items: center;
     justify-content: center;
   }
 
@@ -252,22 +339,12 @@ img {
     width: 20%;
   }
 
-  .homemain,
+  /* .homemain, */
   .projectsmain,
   .aboutmain,
   .contactmain {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-
-  .homemain {
-    background-image: url("/src/images/astronaut_swing_bouquet_154206_1920x1080.jpg");
-  }
-
-  .projectsmain,
-  .aboutmain,
-  .contactmain {
-    background-image: url("/src/images/black.jpg");
   }
 }

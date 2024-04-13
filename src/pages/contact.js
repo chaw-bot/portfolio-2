@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaTwitterSquare } from 'react-icons/fa';
@@ -7,12 +8,11 @@ const ContactPage = () => (
   <div className="contactmain" id="contactPage">
     <section className="outro">
       <header>
-        <h1 className="font-colour">Hey again!</h1>
+        <h2 className="font-colour">Lets chat!</h2>
       </header>
-      <p className="text-light">
-        I&apos;m always interested in hearing
-        about new projects. If you would
-        like to chat please get in touch.
+      <p className="outrop">
+        I&apos;m always up for a challenge!
+        Let&apos;s chat about how I can help you design and build something amazing.
       </p>
       <ul className="d-flex justify-content-around contactsocials mt-3">
         <li>

@@ -8,8 +8,26 @@ import leaseAhome from '../images/lease-a-home.png';
 import everyKwacha from '../images/everyKwacha.png';
 import adviceGenerator from '../images/advice-generator.png';
 import interactiveRating from '../images/interactiveRating.png';
+import aiccra from '../images/aiccra.png';
+import koloso from '../images/koloso.jpeg';
 
 const projects = [
+  {
+    name: 'AICCRA :  Innovation Website',
+    description: 'Developed the website from scratch using WordPress, customizing themes and plugins to align with the design vision.',
+    live_demo: 'https://i2g.co.zm/',
+    source_code: '#',
+    image: aiccra,
+    languages: ['WordPress', 'Figma'],
+  },
+  {
+    name: 'Koloso Mobile App',
+    description: 'Collaborated with teammates to develop a gaming-to-learn mobile app for people of all ages - combining social interaction and personal development and fun',
+    live_demo: 'https://play.google.com/store/apps/details?id=com.koloso.app&hl=en_US&pli=1',
+    source_code: '#',
+    image: koloso,
+    languages: ['React Native', 'MaterialUI'],
+  },
   {
     name: 'Adivce Generator',
     description: 'This is an app that generates random advice and quotes from an API.',

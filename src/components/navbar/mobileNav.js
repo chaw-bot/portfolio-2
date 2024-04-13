@@ -1,13 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
+import logo from '../../images/logo.png';
 
 const MobileNav = ({ navLinks }) => (
   <nav className="navbar navbar-light fixed-top mobile-nav">
     <div className="container-fluid">
-      <Link className="text-light h2" to="homePage">Chaw</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span className="navbar-toggler-icon" />
+      <Link className="text-light h2" to="homePage">
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        <span className="navbar-toggler-icon">
+          <span className="visually-hidden">Toggle navigation</span>
+        </span>
       </button>
       <div className="offcanvas offcanvas-end menu-pop" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div className="offcanvas-header">
