@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaTwitterSquare } from 'react-icons/fa';

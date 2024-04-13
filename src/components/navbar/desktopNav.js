@@ -6,14 +6,14 @@ import logo from '../../images/logo.png';
 const DesktopNav = ({ navLinks }) => (
   <nav className="desk-nav">
     <header>
-      <Link className="text-light h2" to="homePage">
+      <Link to="homePage">
         <img src={logo} alt="logo" className="logo" />
       </Link>
     </header>
     <ul>
       {navLinks.map((links) => (
         <li key={links.id} className={links.name}>
-          <Link to={links.pageName} smooth duration={500} activeclassname="active" className="text-light nav-link">
+          <Link to={links.pageName} smooth duration={500} activeclassname="active" className="nav-link">
             {links.text}
           </Link>
         </li>

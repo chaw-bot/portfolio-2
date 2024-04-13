@@ -9,8 +9,16 @@ const MobileNav = ({ navLinks }) => (
       <Link className="text-light h2" to="homePage">
         <img src={logo} alt="logo" className="logo" />
       </Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span className="navbar-toggler-icon" />
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        <span className="navbar-toggler-icon">
+          <span className="visually-hidden">Toggle navigation</span>
+        </span>
       </button>
       <div className="offcanvas offcanvas-end menu-pop" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div className="offcanvas-header">
