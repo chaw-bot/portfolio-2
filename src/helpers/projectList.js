@@ -10,11 +10,20 @@ import adviceGenerator from '../images/advice-generator.png';
 import interactiveRating from '../images/interactiveRating.png';
 import aiccra from '../images/aiccra.png';
 import koloso from '../images/koloso.jpeg';
+import hoppers from '../images/hoppers.png';
 
 const projects = [
   {
+    name: 'Hoppers Logistics Dashboard',
+    description: 'Designed and developed a logistis and cargo company dashboard that allows a user to monitor the actions one the different apps.',
+    live_demo: '#',
+    source_code: '#',
+    image: hoppers,
+    languages: ['NextJS', 'Figma'],
+  },
+  {
     name: 'AICCRA :  Innovation Website',
-    description: 'Developed the website from scratch using WordPress, customizing themes and plugins to align with the design vision.',
+    description: 'Designed and developed a dashboard for a logistics and cargo company, enabling users to monitor activities across various company applications.',
     live_demo: 'https://i2g.co.zm/',
     source_code: '#',
     image: aiccra,
@@ -62,7 +71,7 @@ const projects = [
   },
   {
     name: 'Literary Arts Conference',
-    description: 'A conference page for a literary art conference. This project was built with HTML DOM as well a variety of CSS properties such us, Flex-box, Grid, media queries, animations and transitions.',
+    description: 'A web page for a literary arts conference, built using HTML DOM and CSS features like Flexbox, Grid, media queries, animations, and transitions.',
     live_demo: 'https://chaw-bot.github.io/Portal-Capstone-Project/',
     source_code: 'https://github.com/chaw-bot/Portal-Capstone-Project',
     image: conference,
@@ -78,7 +87,7 @@ const projects = [
   },
   {
     name: 'OOP School Library',
-    description: 'This app is a tool one can use in a library to record books present in the library and who borrows them. It allows the user to: Add new students or teachers.Add new books. Save records of who borrowed a given book and when.',
+    description: 'This app helps library staff track their books and borrowers. Users can add new students or teachers, register new books, and log details about who borrowed which book and when.',
     live_demo: 'https://github.com/chaw-bot/OOP-School-Libraby',
     source_code: 'https://github.com/chaw-bot/OOP-School-Libraby',
     image: library,

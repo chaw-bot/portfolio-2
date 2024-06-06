@@ -12,12 +12,13 @@ const ContactPage = () => (
       </header>
       <p className="outrop">
         I&apos;m always up for a challenge!
+        <br />
         Let&apos;s chat about how I can help you design and build something amazing.
       </p>
-      <ul className="d-flex justify-content-around contactsocials mt-3">
+      <ul className="d-flex justify-content-between contactsocials mt-3">
         <li>
           <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
-            <SiLinkedin className="icon" />
+            <SiLinkedin className="icon_third" />
           </a>
         </li>
         <li>
@@ -27,12 +28,12 @@ const ContactPage = () => (
         </li>
         <li>
           <a href="https://twitter.com/chawfronaut" target="_blank" rel="noreferrer">
-            <FaTwitterSquare className="icon" />
+            <FaTwitterSquare className="icon_fifth" />
           </a>
         </li>
         <li>
           <a href="https://medium.com/@afrononymous" target="_blank" rel="noreferrer">
-            <AiFillMediumCircle className="icon_second" />
+            <AiFillMediumCircle className="icon_fourth" />
           </a>
         </li>
       </ul>
