@@ -11,7 +11,7 @@ const Languages = ({ languages }) => {
 
   return (
     <div className="mt-3">
-      <button type="button" className="link-btn text-light p-2" onClick={toggleDropdown}>
+      <button type="button" className="skills-btn text-light p-2" onClick={toggleDropdown}>
         Languages
         {' '}
         {isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}

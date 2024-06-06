@@ -1,9 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const ProjectsPage = ({ projects }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 3;
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [projectsPerPage, setProjectsPerPage] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth > 1024) {
+      setProjectsPerPage(3);
+    } else if (screenWidth > 768 && screenWidth <= 1024) {
+      setProjectsPerPage(2);
+    } else {
+      setProjectsPerPage(1);
+    }
+  }, [screenWidth]);
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
@@ -29,19 +51,19 @@ const ProjectsPage = ({ projects }) => {
       </header>
       <section className="projects-cont">
         <button type="button" onClick={prevPage} disabled={currentPage === 1} className="arrows">
-          &#8592;
+          &lt;
         </button>
         {currentProjects.map((project) => (
           <div key={project.name} className="card mt-3 p-3 projects">
             <div>
               <h5>{project.name}</h5>
               <img src={project.image} alt={project.name} className="images" />
-              <ul className="d-flex justify-content-evenly mt-3 lang">
+              <ul className="d-flex justify-content-between mt-3 lang">
                 {project.languages.map((language) => (
                   <li key={language} className="p-2 h6">{language}</li>
                 ))}
               </ul>
-              <p className="mt-3">{project.description}</p>
+              <p className="mt-3 project_description">{project.description}</p>
             </div>
             <div>
               <div className="d-flex justify-content-evenly">
@@ -51,13 +73,12 @@ const ProjectsPage = ({ projects }) => {
                 <button type="button" className="m-2 link-btn-2" aria-label="Source Code for {project.name}" onClick={() => openLink(project.source_code)}>
                   Source Code
                 </button>
-
               </div>
             </div>
           </div>
         ))}
         <button type="button" onClick={nextPage} disabled={currentPage === totalPages} className="arrows">
-          &#8594;
+          &gt;
         </button>
       </section>
     </div>

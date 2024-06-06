@@ -27,9 +27,9 @@ const AboutPage = () => (
         I can contribute my expertise and help drive technological growth.
       </p>
 
-      <a href={Resume} className="p-2 link-btn text-light resume" download>Resume</a>
+      <a href={Resume} className="p-2 link-btn text-light resume" download target="_blank" rel="noopener noreferrer">Resume</a>
     </section>
-    <section className="skills d-flex flex-column">
+    <section className="skills d-flex flex-row">
       <Languages languages={['HTML', 'CSS', 'JavaScript', 'Ruby', 'Ruby on Rails']} />
       <Frameworks
         frameworks={['BootStrap', 'ReactJS', 'Redux', 'NextJS', 'ReactNative', 'WordPress']}
@@ -39,8 +39,10 @@ const AboutPage = () => (
           'Git & GitHub',
           'Figma',
           'Canva',
-          'Team Work & Pair Programming',
-          'Web Development & Mobile Application Development',
+          'Team Work',
+          'Pair Programming',
+          'Web Development',
+          'Mobile Application Development',
           'UI/UX',
         ]}
       />
