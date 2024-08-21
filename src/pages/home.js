@@ -1,54 +1,39 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import { SiLinkedin, SiGithub } from 'react-icons/si';
-import { FaTwitterSquare } from 'react-icons/fa';
-import { AiFillMediumCircle } from 'react-icons/ai';
-import { IoMdMail } from 'react-icons/io';
+import astroImage from '../images/astro.png';
+import Resume from "../images/Chawanzi's Resume.pdf";
 
 const HomePage = () => (
   <div className="homemain" id="homePage">
     <section className="intro">
       <header>
-        {/* <h1 className="font-colour">Hey there!</h1> */}
-        <h3>Chawanzi Ng&apos;uni</h3>
-        <h4>Front-End Developer</h4>
+        <h3>Hi, I&apos;m Chawanzi Ng&apos;uni</h3>
         <br />
-        <h4 className="call-to-action">Building beautiful & user-friendly experiences.</h4>
+        <h4 className="call-to-action">
+          Frontend Developer &
+          <span> UI/UX Designer</span>
+        </h4>
       </header>
       <p>
         I design and code user-friendly products, features, and websites.
         Explore my work and experience - if you have a project in mind, let&apos;s chat!
       </p>
+      <div>
+        <a href={Resume} className="p-2 link-btn resume" download target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
+        <a href={Resume} className="p-2 link-btn text-light hire" download target="_blank" rel="noopener noreferrer">HIRE ME</a>
+      </div>
     </section>
-    <section className="socials">
-      <ul className="d-flex justify-content-around">
-        <li>
-          <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
-            <SiLinkedin className="icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/chaw-bot" target="_blank" rel="noreferrer">
-            <SiGithub className="icon_second" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/chawfronaut" target="_blank" rel="noreferrer">
-            <FaTwitterSquare className="icon_third" />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@afrononymous" target="_blank" rel="noreferrer">
-            <AiFillMediumCircle className="icon_fourth" />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:nwanzi5@gmail.com" target="_blank" rel="noreferrer">
-            <IoMdMail className="icon_fifth" />
-          </a>
-        </li>
-      </ul>
-    </section>
+    <section
+      className="image"
+      style={{
+        backgroundImage: `url(${astroImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '40%',
+        height: '80%',
+        display: window.innerWidth <= 768 ? 'none' : 'block',
+      }}
+    />
   </div>
 );
 

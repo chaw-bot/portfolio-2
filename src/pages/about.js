@@ -8,44 +8,42 @@ const AboutPage = () => (
   <div className="aboutmain" id="aboutPage">
     <section className="about">
       <header>
-        <h2 className="font-colour">About me</h2>
+        <h2 className="font-colour">About Me</h2>
       </header>
       <p>
-        I&lsquo;m a passionate front-end developer fueled by a love
-        for building user-friendly interfaces and web experiences.
-        With expertise in web development, React Native mobile apps,
-        and WordPress, I leverage my skills in HTML, CSS, JavaScript,
-        and React.js to bring your vision to life.
-        Whether it&lsquo;s building robust web applications,
-        creating seamless cross-platform mobile apps,
-        or crafting engaging WordPress websites,
-        I&lsquo;m dedicated to modern design principles and exceptional user experiences.
-
-        I thrive in collaborative environments and
-        prioritize clear communication to ensure project success.
-        I&lsquo;m eager to join a team where
-        I can contribute my expertise and help drive technological growth.
+        I&apos;m a front-end developer with a passion for building
+        user-friendly interfaces and engaging web experiences.
+        Skilled in web development, most JavaScript frameworks, and WordPress,
+        I use these tools to bring visions to life.
+        Whether it&apos;s crafting robust web apps, seamless mobile apps,
+        or dynamic WordPress sites,
+        I prioritize modern design and exceptional user experiences.
+        I thrive in collaborative environments where clear communication ensures success,
+        and I&apos;m eager to contribute to a team focused on technological growth.
       </p>
 
-      <a href={Resume} className="p-2 link-btn text-light resume" download target="_blank" rel="noopener noreferrer">Resume</a>
+      <div>
+        <a href={Resume} className="p-2 link-btn resume" download target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
+        <a href={Resume} className="p-2 link-btn text-light hire" download target="_blank" rel="noopener noreferrer">HIRE ME</a>
+      </div>
     </section>
     <section className="skills d-flex flex-row">
-      <Languages languages={['HTML', 'CSS', 'JavaScript', 'Ruby', 'Ruby on Rails']} />
       <Frameworks
-        frameworks={['BootStrap', 'ReactJS', 'Redux', 'NextJS', 'ReactNative', 'WordPress']}
+        frameworks={['BootStrap', 'NextJS', 'ReactJS', 'ReactNative', 'WordPress']}
       />
       <Skills
         skills={[
-          'Git & GitHub',
-          'Figma',
           'Canva',
+          'Figma',
+          'Git & GitHub',
+          'Mobile Development',
           'Team Work',
           'Pair Programming',
           'Web Development',
-          'Mobile Application Development',
           'UI/UX',
         ]}
       />
+      <Languages languages={['CSS', 'HTML', 'JavaScript', 'Ruby', 'Ruby on Rails']} />
     </section>
   </div>
 );

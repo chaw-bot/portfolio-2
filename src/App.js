@@ -6,14 +6,16 @@ import AboutPage from './pages/about';
 import ContactPage from './pages/contact';
 import ProjectsPage from './pages/projectsPage';
 import projects from './helpers/projectList';
+import ServicePage from './pages/servicePage';
 
 const App = () => (
   <div className="App">
     <Router>
       <NavBar />
       <HomePage />
-      <ProjectsPage projects={projects} />
       <AboutPage />
+      <ServicePage />
+      <ProjectsPage projects={projects} />
       <ContactPage />
     </Router>
   </div>

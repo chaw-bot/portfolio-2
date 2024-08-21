@@ -12,7 +12,7 @@ const DesktopNav = ({ navLinks }) => (
     </header>
     <ul>
       {navLinks.map((links) => (
-        <li key={links.id} className={links.name}>
+        <li key={links.id}>
           <Link to={links.pageName} smooth duration={500} activeclassname="active" className="nav-link">
             {links.text}
           </Link>

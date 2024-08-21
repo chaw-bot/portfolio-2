@@ -1,41 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { FaLink } from 'react-icons/fa';
 
 const ProjectsPage = ({ projects }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [projectsPerPage, setProjectsPerPage] = useState(3);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (screenWidth > 1024) {
-      setProjectsPerPage(3);
-    } else if (screenWidth > 768 && screenWidth <= 1024) {
-      setProjectsPerPage(2);
-    } else {
-      setProjectsPerPage(1);
-    }
-  }, [screenWidth]);
-
-  const indexOfLastProject = currentPage * projectsPerPage;
-  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
-
-  const nextPage = () => setCurrentPage((prev) => prev + 1);
-  const prevPage = () => setCurrentPage((prev) => prev - 1);
-
-  const totalPages = Math.ceil(projects.length / projectsPerPage);
-
   const openLink = (url) => {
     if (url) {
       window.open(url, '_blank', 'noopener,noreferrer');
@@ -45,41 +12,34 @@ const ProjectsPage = ({ projects }) => {
   return (
     <div className="projectsmain p-3" id="projectsPage">
       <header>
-        <h3 className="font-colour p-3 mt-3">
-          Here are some of the projects I&apos;ve created and collaborated on..
-        </h3>
+        <h2 className="font-colour">My Projects</h2>
       </header>
+      <p className="sub">
+        Take a look at some of the projects I have developed and collaborated on,
+        showcasing my work across various platforms and technologies.
+      </p>
       <section className="projects-cont">
-        <button type="button" onClick={prevPage} disabled={currentPage === 1} className="arrows">
-          &lt;
-        </button>
-        {currentProjects.map((project) => (
-          <div key={project.name} className="card mt-3 p-3 projects">
-            <div>
-              <h5>{project.name}</h5>
+        {projects.map((project) => (
+          <div key={project.name} className="mt-3 projects">
+            <div className="image-container">
               <img src={project.image} alt={project.name} className="images" />
-              <ul className="d-flex justify-content-between mt-3 lang">
-                {project.languages.map((language) => (
-                  <li key={language} className="p-2 h6">{language}</li>
-                ))}
-              </ul>
-              <p className="mt-3 project_description">{project.description}</p>
-            </div>
-            <div>
-              <div className="d-flex justify-content-evenly">
-                <button type="button" className="m-2 link-btn" aria-label="Live Demo for {project.name}" onClick={() => openLink(project.live_demo)}>
-                  Live Demo
-                </button>
-                <button type="button" className="m-2 link-btn-2" aria-label="Source Code for {project.name}" onClick={() => openLink(project.source_code)}>
-                  Source Code
-                </button>
+              <div className="overlay">
+                <div className="overlay-text">
+                  <h5>{project.name}</h5>
+                  <ul className="d-flex lang">
+                    {project.languages.map((language) => (
+                      <li key={language}>{language}</li>
+                    ))}
+                  </ul>
+                  <p>{project.description}</p>
+                  <button type="button" className="proj-link" aria-label="Live Demo for {project.name}" onClick={() => openLink(project.live_demo)}>
+                    <FaLink color="#3BB44D" size={20} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         ))}
-        <button type="button" onClick={nextPage} disabled={currentPage === totalPages} className="arrows">
-          &gt;
-        </button>
       </section>
     </div>
   );
