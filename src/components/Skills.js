@@ -1,33 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IoMdArrowDropup, IoMdArrowDropdown } from 'react-icons/io';
+import skillsIcon from '../images/skills.png';
 
 const Skills = ({
   skills,
-}) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className="mt-3">
-      <button type="button" className="skills-btn text-light p-2" onClick={toggleDropdown}>
-        Skills
-        {' '}
-        {isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
-      </button>
-      {isOpen && (
-        <ul className="dropdown-menu show">
-          {skills.map((item) => (
-            <li key={item} className="dropdown-item">{item}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+}) => (
+  <div className="skillscard">
+    <img src={skillsIcon} alt="Skills Icon" />
+    <h4>Skills</h4>
+    <ul>
+      {skills.map((item) => (
+        <li key={item} className="items">{item}</li>
+      ))}
+    </ul>
+  </div>
+);
 
 Skills.propTypes = {
   skills: PropTypes.arrayOf(PropTypes.string).isRequired,

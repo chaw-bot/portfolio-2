@@ -1,31 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IoMdArrowDropup, IoMdArrowDropdown } from 'react-icons/io';
+import frameworksIcon from '../images/frameworks.png';
 
-const Frameworks = ({ frameworks }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className="mt-3">
-      <button type="button" className="skills-btn text-light p-2" onClick={toggleDropdown}>
-        Frameworks
-        {' '}
-        {isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
-      </button>
-      {isOpen && (
-        <ul className="dropdown-menu show">
-          {frameworks.map((item) => (
-            <li key={item} className="dropdown-item">{item}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+const Frameworks = ({ frameworks }) => (
+  <div className="skillscard">
+    <img src={frameworksIcon} alt="Framewors Icon" />
+    <h4>Frameworks</h4>
+    <ul>
+      {frameworks.map((item) => (
+        <li key={item} className="items">{item}</li>
+      ))}
+    </ul>
+  </div>
+);
 
 Frameworks.propTypes = {
   frameworks: PropTypes.arrayOf(PropTypes.string).isRequired,
