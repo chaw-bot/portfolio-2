@@ -16,7 +16,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,14 +28,17 @@ body,
 }
 
 .contactmain {
-  background-color: #381B46;
+  background-color: #ffffff;
   padding: 5%;
+}
+.aboutmain {
+  justify-content: left;
 }
 
 .aboutmain,
 .projectsmain {
   /* height: 150vh; */
-  background-color: #462357;
+  background-color: #F0F0F0;
 }
 
 .projectsmain {
@@ -49,13 +52,20 @@ body,
   padding-bottom: 5%;
 }
 
-.services {
-  background-color: #381B46;
+
+
+.aboutmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10%;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .homemain,
 .projectsmain,
-.aboutmain,
 .services {
   display: flex;
   flex-direction: column;
@@ -73,14 +83,14 @@ body,
 }
 
 .font-colour {
-  color: #FFDA22;
-  text-decoration: underline;
+  color: #381B46;
+  font-weight: 700;
 }
 
 .nav-link {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #381B46;
 }
 
 .nav-link:hover {
@@ -88,12 +98,18 @@ body,
   border-radius: 5px;
 }
 
+.sub {
+  width: 60%;
+  text-align: center;
+}
+
 .about p,
 .sub {
+  font-weight: 200;
   font-size: 18px;
   margin-top: 20px;
   margin-bottom: 30px;
-  color: white;
+  color: #381B46;
 }
 
 .outrop {
@@ -103,8 +119,7 @@ body,
 .modal-content,
 .mobile-nav,
 .desk-nav {
-  background-color: #381B46;
-  box-shadow: 0 4px 4px 0 rgba(255, 218, 34, 0.25);
+  background-color: #ffffff;
 }
 
 .read_more {
@@ -131,7 +146,7 @@ code {
 }
 
 .call-to-action {
-  color: #ffffff;
+  color: #381B46;
 }
 
 .call-to-action span {
@@ -159,7 +174,7 @@ code {
 }
 
 .icon {
-  color: #ebf5df;
+  color: #381B46;
   transition: transform 0.3s ease;
 }
 
@@ -213,8 +228,8 @@ code {
 
 .lang li {
   padding: 5px;
-  margin: 5px;
-  border: 1px solid white;
+  margin: 10px 10px 10px 0px;
+  border: 1px solid #ffffff;
   border-radius: 25px;
   font-size: 12px;
 }
@@ -236,7 +251,7 @@ img {
   border: none;
   padding: 10px;
   border-radius: 25px;
-  color: white;
+  color: #381B46;
   text-align: right;
   right: 10px;
   bottom: 10px;
@@ -257,7 +272,7 @@ img {
 
 .items {
   display: block;
-  color: white;
+  color: #381B46;
   text-align: center;
   overflow-wrap: break-word;
   font-size: 16px;
@@ -293,13 +308,15 @@ img {
 }
 
 .link-btn {
-  background-color: #FFDA22;
+  border: solid 2px #381B46;
   color: #381B46;
+  font-weight: 600;
+  margin-right: 20px;
 }
 
 .hire {
-  background-color: #3BB44D;
-  margin-left: 20px;
+  background-color: #381B46;
+  font-weight: 600;
 }
 
 .skills-btn {
@@ -337,25 +354,26 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid #381B46;
   border-radius: 5px;
 }
 
 .box img {
   width: 30%;
+  color: #381B46;
 }
 
 .box h4 {
-  color: white;
+  color: #381B46;
 }
 
 .box p {
-  color: white;
+  color: #381B46;
   text-align: center;
 }
 
 .link-btn-2 {
-  background-color: #ebf5df;
+  background-color: #381B46
 }
 
 .arrows {
@@ -364,8 +382,10 @@ img {
   font-size: 30px;
 }
 
-.homemain {
-  background-color: #381B46;
+.homemain,
+.services,
+.contactmain {
+  background-color: #ffffff;
 }
 
 .projects-cont {
@@ -382,7 +402,7 @@ img {
 }
 
 .skillscard h4 {
-  color: white;
+  color: #381B46;
   text-align: center;
   font-weight: 600;
   padding: 10px 0;
@@ -401,17 +421,17 @@ img {
 .intro p,
 .about,
 .outro h5 {
-  color: #ffffff;
+  color: #381B46;
 }
 
 .social-link {
-  color: white;
+  color: #381B46;
   font-size: 18px;
   margin-left: 5px;
 }
 
 .contact h4 {
-  color: white;
+  color: #381B46;
 }
 
 .contact ul li {
@@ -421,14 +441,14 @@ img {
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 300px;
-  height: 180px;
+  /* max-width: 300px; */
+  height: 280px;
 }
 
 .images {
   display: block;
   max-width: 100%;
-  height: 180px;
+  height:280px;
   object-fit: cover;
 }
 
@@ -438,9 +458,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3BB44D;
+  background-color: #381B46;
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,16 +473,25 @@ img {
 }
 
 .overlay-text {
-  padding: 10px;
+  padding: 20px;
 }
 
 .overlay-text p {
   font-size: 14px;
 }
 
+.image {
+  display: none;
+}
+
 @media only screen and (min-width: 800px) {
   .mobile-nav {
     display: none;
+  }
+
+  .image {
+    width: 40%;
+    height: 75%;
   }
 
   .desk-nav {
@@ -482,7 +511,6 @@ img {
     display: flex;
     flex-direction: row;
     height: 50vh;
-    background-color: #381B46;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 10%;
@@ -510,7 +538,7 @@ img {
   .homemain {    
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
   }
 
   .servicesContainer{
@@ -522,13 +550,25 @@ img {
     align-items: center;
   }
 
-  .about,
+  .about {
+    width: 60%;
+  }
+
   .outro {
     width: 80%;
   }
 
   .intro {
-    width: 60%;
+    width: 50%;
+  }
+  
+  .about-me {
+    text-align: left !important;
+  }
+
+  .about header h2,
+  .about h4 {
+    text-align: center;
   }
 
   .intro header h1,
@@ -542,7 +582,12 @@ img {
     font-size: 3rem;
   }
 
-  .intro p,
+  .intro p {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  
   .about,
   .outro h5 {
     font-size: 1.5rem;
@@ -552,7 +597,7 @@ img {
     font-size: 2rem;
   }
 
-  .about,
+  /* .about, */
   .outro h5 {
     text-align: center;
   }
@@ -575,7 +620,7 @@ img {
   }
 
   .projects {
-    width: 22%;
+    width: 35%;
   }
 
   .projectsmain,

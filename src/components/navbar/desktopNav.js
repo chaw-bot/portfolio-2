@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
-import logo from '../../images/logo.png';
+import logo from '../../images/chaw.png';
 
 const DesktopNav = ({ navLinks }) => (
   <nav className="desk-nav">

@@ -12,8 +12,35 @@ import aiccra from '../images/aiccra.png';
 import koloso from '../images/koloso.jpg';
 import hoppers from '../images/hoppers.png';
 import thrive from '../images/thrive.png';
+import primeVillas from '../images/primevillas.png';
+import abaleya from '../images/abaleya.png';
+import copperRose from '../images/copperrose.png';
 
 const projects = [
+  {
+    name: 'Abaleya Carpooling',
+    description: 'A modern carpooling app designed to streamline shared rides for daily commuters. It connects drivers and passengers heading in the same direction, promoting cost-effective and eco-friendly transportation. The app offers real-time ride tracking, user authentication, and a seamless booking experience.',
+    live_demo: 'https://play.google.com/store/apps/details?id=com.mycompany.abaleya&hl=en',
+    source_code: '#',
+    image: abaleya,
+    languages: ['Figma'],
+  },
+  {
+    name: 'Copper Rose Zambia',
+    description: 'A dynamic website for Copper Rose Zambia, an organization dedicated to empowering young people through sexual and reproductive health education, economic empowerment, and leadership programs. The site showcases their initiatives, impact stories, and opportunities to get involved.',
+    live_demo: 'https://copperrose.africa/',
+    source_code: '#',
+    image: copperRose,
+    languages: ['Figma'],
+  },
+  {
+    name: 'Prime Villas Zambia',
+    description: 'A sophisticated real estate website designed for Prime Villas Zambia, a luxury housing complex offering high-end living with modern amenities such as a gym, spa, and premium housing solutions. The site provides property listings, virtual tours, and booking options for prospective buyers and tenants.',
+    live_demo: 'https://primevillaszambia.com/',
+    source_code: '#',
+    image: primeVillas,
+    languages: ['Figma', 'WordPress'],
+  },
   {
     name: 'Hoppers Logistics Dashboard',
     description: 'A logistic and cargo company dashboard that allows a user to monitor the actions from across various company applications.',
@@ -94,6 +121,14 @@ const projects = [
     image: leaderboard,
     languages: ['HTML5', 'CSS', 'JavaScript', 'Webpack'],
   },
+  {
+    name: 'CoviData Metrics',
+    description: 'A mobile web app used to check a list of COVID-19 metrics worldwide.',
+    live_demo: 'https://covidataworldwide.netlify.app/',
+    source_code: 'https://github.com/chaw-bot/react-capstone-project',
+    image: covid,
+    languages: ['ReactJS', 'Redux', 'CSS'],
+  },
   // {
   //   name: 'OOP School Library',
   //   description: 'This app helps library staff track their books and borrowers.
@@ -104,14 +139,6 @@ const projects = [
   //   image: library,
   //   languages: ['Ruby', 'RSpec'],
   // },
-  {
-    name: 'CoviData Metrics',
-    description: 'A mobile web app used to check a list of COVID-19 metrics worldwide.',
-    live_demo: 'https://covidataworldwide.netlify.app/',
-    source_code: 'https://github.com/chaw-bot/react-capstone-project',
-    image: covid,
-    languages: ['ReactJS', 'Redux', 'CSS'],
-  },
   // {
   //   name: "Space Travelers' Hub",
   //   description: 'A web app built for a company that provides commercial and scientific
