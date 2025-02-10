@@ -4,7 +4,7 @@ import {
   FaLinkedin, FaGithub, FaEnvelope, FaMedium,
 } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import astroImage from '../images/logo.png';
+import astroImage from '../images/chaw.png';
 import navLinks from '../helpers/links';
 
 const ContactPage = () => (
@@ -24,25 +24,25 @@ const ContactPage = () => (
       <ul>
         <li className="cont-links">
           <a href="https://www.linkedin.com/in/chawanzi-ng-uni/">
-            <FaLinkedin color="white" size={25} />
+            <FaLinkedin color="#381B46" size={25} />
             <span className="social-link">linkedin.com/in/chawanzi-ng-uni/</span>
           </a>
         </li>
         <li className="cont-links">
           <a href="https://www.github.com/chaw-bot">
-            <FaGithub color="white" size={25} className="social-link" />
+            <FaGithub color="#381B46" size={25} className="social-link" />
             <span className="social-link">chaw-bot</span>
           </a>
         </li>
         <li className="cont-links">
           <a href="mailto:chawanzi.dev@gmail.com">
-            <FaEnvelope color="white" size={25} className="social-link" />
+            <FaEnvelope color="#381B46" size={25} className="social-link" />
             <span className="social-link">chawanzi.dev@gmail.com</span>
           </a>
         </li>
         <li className="cont-links">
           <a href="https://www.medium.com/@afrononymous">
-            <FaMedium color="white" size={25} className="social-link" />
+            <FaMedium color="#381B46" size={25} className="social-link" />
             <span className="social-link">@afrononymous</span>
           </a>
         </li>

@@ -10,7 +10,7 @@ const ProjectsPage = ({ projects }) => {
   };
 
   return (
-    <div className="projectsmain p-3" id="projectsPage">
+    <div className="projectsmain p-5" id="projectsPage">
       <header>
         <h2 className="font-colour">My Projects</h2>
       </header>
@@ -33,7 +33,7 @@ const ProjectsPage = ({ projects }) => {
                   </ul>
                   <p>{project.description}</p>
                   <button type="button" className="proj-link" aria-label="Live Demo for {project.name}" onClick={() => openLink(project.live_demo)}>
-                    <FaLink color="#3BB44D" size={20} />
+                    <FaLink color="#381B46" size={20} />
                   </button>
                 </div>
               </div>
