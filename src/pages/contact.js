@@ -20,35 +20,35 @@ const ContactPage = () => (
       }}
     />
     <section className="contact">
-      <h4>Contact</h4>
-      <ul>
+      <h4 className="usefull-links">Contact</h4>
+      <ul className="contact-socials">
         <li className="cont-links">
-          <a href="https://www.linkedin.com/in/chawanzi-ng-uni/">
+          <a href="https://www.linkedin.com/in/chawanzi-ng-uni/" target="_blank" rel="noreferrer">
             <FaLinkedin color="#381B46" size={25} />
-            <span className="social-link">linkedin.com/in/chawanzi-ng-uni/</span>
+            <span className="social-link usefull-links">linkedin.com/in/chawanzi-ng-uni/</span>
           </a>
         </li>
         <li className="cont-links">
-          <a href="https://www.github.com/chaw-bot">
+          <a href="https://www.github.com/chaw-bot" target="_blank" rel="noreferrer">
             <FaGithub color="#381B46" size={25} className="social-link" />
-            <span className="social-link">chaw-bot</span>
+            <span className="social-link usefull-links">chaw-bot</span>
           </a>
         </li>
         <li className="cont-links">
-          <a href="mailto:chawanzi.dev@gmail.com">
+          <a href="mailto:chawanzi.dev@gmail.com" target="_blank" rel="noreferrer">
             <FaEnvelope color="#381B46" size={25} className="social-link" />
-            <span className="social-link">chawanzi.dev@gmail.com</span>
+            <span className="social-link usefull-links">chawanzi.dev@gmail.com</span>
           </a>
         </li>
         <li className="cont-links">
-          <a href="https://www.medium.com/@afrononymous">
+          <a href="https://www.medium.com/@afrononymous" target="_blank" rel="noreferrer">
             <FaMedium color="#381B46" size={25} className="social-link" />
-            <span className="social-link">@afrononymous</span>
+            <span className="social-link usefull-links">@afrononymous</span>
           </a>
         </li>
       </ul>
     </section>
-    <section className="contact">
+    <section className="contact usefull-links">
       <h4>Useful Links</h4>
       <ul>
         {navLinks.map((link) => (

@@ -59,20 +59,19 @@ const AboutPage = () => {
           <h2 className="font-colour about-me">About Me</h2>
         </header>
         <p>
-          I&apos;m a front-end developer with a passion for building
-          user-friendly interfaces and engaging web experiences.
-          Skilled in web development, most JavaScript frameworks, and WordPress,
-          I use these tools to bring visions to life.
-          Whether it&apos;s crafting robust web apps, seamless mobile apps,
-          or dynamic WordPress sites,
-          I prioritize modern design and exceptional user experiences.
-          I thrive in collaborative environments where clear communication ensures success,
-          and I&apos;m eager to contribute to a team focused on technological growth.
+          I am a front-end developer and UX/UI designer passionate about crafting seamless,
+          user-friendly experiences. By blending thoughtful design with clean, efficient code,
+          I bring ideas to life using modern web technologies, JavaScript frameworks, and WordPress.
+          Whether it&apos;s designing intuitive interfaces, building sleek web and mobile apps, or
+          creating dynamic WordPress sites, I focus on delivering digital experiences
+          that feel effortless.
+          I thrive in collaborative spaces where clear communication drives innovation, and I&apos;m
+          always eager to contribute to meaningful, user-centred solutions.
         </p>
 
         <div>
-          <a href={Resume} className="p-2 link-btn resume" download target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
-          <a href={Resume} className="p-2 link-btn text-light hire" download target="_blank" rel="noopener noreferrer">HIRE ME</a>
+          <a href={Resume} className="p-2 link-btn resume" download target="_blank" rel="noopener noreferrer">View Resume</a>
+          <a href={Resume} className="p-2 link-btn text-light hire" download target="_blank" rel="noopener noreferrer">Hire Me 🏁</a>
         </div>
       </section>
       <section className="skills d-flex flex-row">

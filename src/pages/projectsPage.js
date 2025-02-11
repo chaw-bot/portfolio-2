@@ -10,13 +10,13 @@ const ProjectsPage = ({ projects }) => {
   };
 
   return (
-    <div className="projectsmain p-5" id="projectsPage">
+    <div className="projectsmain" id="projectsPage">
       <header>
         <h2 className="font-colour">My Projects</h2>
       </header>
       <p className="sub">
-        Take a look at some of the projects I have developed and collaborated on,
-        showcasing my work across various platforms and technologies.
+        Here are some of the projects I&apos;ve designed and built—blending creativity, code,
+        and user-centered thinking to craft seamless digital experiences.
       </p>
       <section className="projects-cont">
         {projects.map((project) => (
