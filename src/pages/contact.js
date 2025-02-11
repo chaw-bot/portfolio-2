@@ -35,7 +35,7 @@ const ContactPage = () => (
           </a>
         </li>
         <li className="cont-links">
-          <a href="mailto:chawanzi.dev@gmail.com" target="_blank" rel="noreferrer">
+          <a href="mailto:chawanzi.dev@gmail.com?subject=Project Inquiry" target="_blank" rel="noreferrer">
             <FaEnvelope color="#381B46" size={25} className="social-link" />
             <span className="social-link usefull-links">chawanzi.dev@gmail.com</span>
           </a>
