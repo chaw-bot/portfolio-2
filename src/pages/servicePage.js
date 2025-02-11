@@ -9,7 +9,7 @@ const ServicePage = () => (
       <header>
         <h2 className="font-colour">My Services</h2>
       </header>
-      <h4>Crafting digital magic with code and creativity.</h4>
+      <h4>Bridging design and development to create seamless, user-focused digital experiences.</h4>
     </section>
     <section className="servicesContainer">
       <div className="box">

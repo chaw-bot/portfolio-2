@@ -31,6 +31,7 @@ body,
   background-color: #ffffff;
   padding: 5%;
 }
+
 .aboutmain {
   justify-content: left;
 }
@@ -44,24 +45,13 @@ body,
 .projectsmain {
   height: auto;
 }
+
 .projectsmain header {
-  padding-top: 5%;
+  width: 100%;
 }
 
 .projects-cont {
   padding-bottom: 5%;
-}
-
-
-
-.aboutmain {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* align-items: center; */
-  padding: 10%;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .homemain,
@@ -71,7 +61,6 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,11 +87,6 @@ body,
   border-radius: 5px;
 }
 
-.sub {
-  width: 60%;
-  text-align: center;
-}
-
 .about p,
 .sub {
   font-weight: 200;
@@ -110,6 +94,21 @@ body,
   margin-top: 20px;
   margin-bottom: 30px;
   color: #381B46;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.intro p {
+  font-size: 35px;
+  line-height: 1;
+}
+
+.usefull-links {
+  display: none;
 }
 
 .outrop {
@@ -123,11 +122,11 @@ body,
 }
 
 .read_more {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 250px;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
 
 code {
   font-family:
@@ -347,6 +346,7 @@ img {
 .about h4 {
   padding: 5% 0;
   font-style: italic;
+  font-weight: 300;
 }
 
 .box {
@@ -448,7 +448,7 @@ img {
 .images {
   display: block;
   max-width: 100%;
-  height:280px;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -472,6 +472,14 @@ img {
   opacity: 1;
 }
 
+.aboutmain,
+.contactmain,
+.homemain,
+.projectsmain,
+.services {
+  padding: 10% 5%;
+}
+
 .overlay-text {
   padding: 20px;
 }
@@ -491,7 +499,12 @@ img {
 
   .image {
     width: 40%;
-    height: 75%;
+    height: 80%;
+  }
+
+  .sub {
+    width: 60%;
+    text-align: center;
   }
 
   .desk-nav {
@@ -513,14 +526,21 @@ img {
     height: 50vh;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 10%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
+  .usefull-links {
+    display: block;
+  }
+
   nav ul {
     justify-content: space-between;
+  }
+
+  .projectsmain header {
+    text-align: center;
   }
 
   nav ul,
@@ -529,19 +549,27 @@ img {
     display: flex;
   }
 
+  .aboutmain,
+  .contactmain,
+  .homemain,
+  .projectsmain,
+  .services {
+    padding: 10% 10%;
+  }
+
   .active,
   .navLinks li a:hover {
     border: none;
     border-bottom: 3px solid #FFF9DB;
   }
 
-  .homemain {    
+  .homemain {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .servicesContainer{
+  .servicesContainer {
     flex-direction: row;
   }
 
@@ -561,7 +589,7 @@ img {
   .intro {
     width: 50%;
   }
-  
+
   .about-me {
     text-align: left !important;
   }
@@ -571,11 +599,21 @@ img {
     text-align: center;
   }
 
+  .aboutmain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .intro header h1,
   .about header h1,
   .outro header h1 {
     font-size: 5rem;
     text-align: center;
+  }
+
+  .cont-links a {
+    display: flex;
   }
 
   .intro header h3 {
@@ -584,10 +622,9 @@ img {
 
   .intro p {
     font-size: 50px;
-    line-height: 1;
   }
 
-  
+
   .about,
   .outro h5 {
     font-size: 1.5rem;
@@ -620,7 +657,7 @@ img {
   }
 
   .projects {
-    width: 35%;
+    width: 40%;
   }
 
   .projectsmain,
@@ -629,5 +666,37 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .contact-socials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animated-section {
+    opacity: 0;
+    transform: rotate(0deg);
+    animation: fadeInSwing 1s ease-out forwards, swing 3s ease-in-out 1.2s infinite;
+  }
+  
+  /* Fading in */
+  @keyframes fadeInSwing {
+    from {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+  }
+  
+  /* Swing effect */
+  @keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
   }
 }

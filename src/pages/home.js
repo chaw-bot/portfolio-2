@@ -27,7 +27,7 @@ const HomePage = () => (
       </div>
     </section>
     <section
-      className="image"
+      className="image animated-section"
       style={{
         backgroundImage: `url(${astroImage})`,
         backgroundSize: 'cover',

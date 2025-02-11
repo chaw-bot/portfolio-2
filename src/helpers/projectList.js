@@ -34,6 +34,14 @@ const projects = [
     languages: ['Figma'],
   },
   {
+    name: 'Koloso Mobile App',
+    description: 'A gaming-to-learn mobile app for people of all ages - combining social interaction and personal development and fun.',
+    live_demo: 'https://play.google.com/store/apps/details?id=com.koloso.app&hl=en_US&pli=1',
+    source_code: '#',
+    image: koloso,
+    languages: ['React Native', 'MaterialUI'],
+  },
+  {
     name: 'Prime Villas Zambia',
     description: 'A sophisticated real estate website designed for Prime Villas Zambia, a luxury housing complex offering high-end living with modern amenities such as a gym, spa, and premium housing solutions. The site provides property listings, virtual tours, and booking options for prospective buyers and tenants.',
     live_demo: 'https://primevillaszambia.com/',
@@ -64,14 +72,6 @@ const projects = [
     source_code: '#',
     image: aiccra,
     languages: ['WordPress', 'Figma'],
-  },
-  {
-    name: 'Koloso Mobile App',
-    description: 'A gaming-to-learn mobile app for people of all ages - combining social interaction and personal development and fun.',
-    live_demo: 'https://play.google.com/store/apps/details?id=com.koloso.app&hl=en_US&pli=1',
-    source_code: '#',
-    image: koloso,
-    languages: ['React Native', 'MaterialUI'],
   },
   {
     name: 'Adivce Generator',
