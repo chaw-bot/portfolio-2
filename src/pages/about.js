@@ -71,7 +71,7 @@ const AboutPage = () => {
 
         <div>
           <a href={Resume} className="p-2 link-btn resume" download target="_blank" rel="noopener noreferrer">View Resume</a>
-          <a href={Resume} className="p-2 link-btn text-light hire" download target="_blank" rel="noopener noreferrer">Hire Me 🏁</a>
+          <a href="mailto:chawanzi.dev@gmail.com?subject=Project Inquiry" className="p-2 link-btn text-light hire" target="_blank" rel="noopener noreferrer">Hire Me 🏁</a>
         </div>
       </section>
       <section className="skills d-flex flex-row">
