@@ -15,8 +15,35 @@ import thrive from '../images/thrive.png';
 import primeVillas from '../images/primevillas.png';
 import abaleya from '../images/abaleya.png';
 import copperRose from '../images/copperrose.png';
+import cfu from '../images/cfu.png';
+import zban from '../images/zban.png';
+import thepott from '../images/thepott.png';
 
 const projects = [
+  {
+    name: 'Potterfield',
+    description: 'A modern marketing and communications agency that amplifies African voices and brands. The site was crafted to reflect the agency’s bold, creative identity while ensuring a smooth user experience across devices.',
+    live_demo: 'https://thepott.co',
+    source_code: '#',
+    image: thepott,
+    languages: ['Figma', 'WordPress', 'Elementor'],
+  },
+  {
+    name: 'Conservation Farming Unit',
+    description: 'An informative platform aimed at promoting sustainable farming practices in Zambia. The goal was to present educational content in a clear, structured, and engaging way to support farmers, researchers, and stakeholders',
+    live_demo: 'https://https://conservationagriculture.org/',
+    source_code: '#',
+    image: cfu,
+    languages: ['Figma', 'WordPress', 'Elementor'],
+  },
+  {
+    name: 'Zambia Business Angels Network',
+    description: 'A platform that connects early-stage entrepreneurs with investors. The site was built to reflect the network’s credibility, showcase its initiatives, and facilitate engagement with potential members and partners.',
+    live_demo: 'https://zban.org.zm/',
+    source_code: '#',
+    image: zban,
+    languages: ['Figma', 'WordPress', 'Elementor'],
+  },
   {
     name: 'Abaleya Carpooling',
     description: 'A modern carpooling app designed to streamline shared rides for daily commuters. It connects drivers and passengers heading in the same direction, promoting cost-effective and eco-friendly transportation. The app offers real-time ride tracking, user authentication, and a seamless booking experience.',
